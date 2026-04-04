@@ -1,15 +1,13 @@
 "use client";
-import React, { useEffect, useRef } from "react";
-import { GoNorthStar } from "react-icons/go";
+import React from "react";
 // images
 import SaveSpend from "../assets/Save-spend.png";
 import Ecommerce from "../assets/e-commerce-project.png";
 import SummaristProject from "../assets/Summarist-project.png";
 import MarketProject from "../assets/Market-landing-project.png";
+
 import ProjectCard from "./ui/ProjectCard";
-// Framer motion
-import * as motion from "motion/react-client";
-import { useAnimation, useInView } from "motion/react";
+import SectionHeader from "./ui/SectionHeader";
 
 export default function ProjectsSection() {
   const projects = [
@@ -43,44 +41,11 @@ export default function ProjectsSection() {
     },
   ];
 
-  const containerRef = useRef(null);
-  const isInView = useInView(containerRef);
-  const mainControls = useAnimation();
-
-  useEffect(() => {
-    if (isInView) {
-      mainControls.start("visible");
-    }
-  }, [isInView]);
-
   return (
     <section id="projects" className="py-30 px-6 border-b-2">
       <div className="max-w-7xl mx-auto">
-        <motion.div
-          ref={containerRef}
-          animate={mainControls}
-          initial="hidden"
-          variants={{
-            hidden: { opacity: 0, y: 15 },
-            visible: {
-              opacity: 1,
-              y: 0,
-            },
-          }}
-          transition={{ delay: 0.5, duration: 0.5 }}
-        >
-          <div className="flex justify-center mb-8">
-            <h3 className="uppercase border-2 py-1 px-5 rounded-full flex items-center gap-2 font-medium bg-[#e3f2ff]">
-              <GoNorthStar />
-              My Projects
-            </h3>
-          </div>
-          <h2 className="text-center font-bold text-5xl mb-8">
-            Check out some of my work!
-          </h2>
-        </motion.div>
-        
-        {/* Add scroll animations */}
+        <SectionHeader title={"My projects"} subTitle={"Check out some of my work!"}/>
+
         <div className="grid md:grid-cols-2 gap-x-10 gap-y-20">
           {projects.map((project, id) => (
             <ProjectCard key={id} project={project} />

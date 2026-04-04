@@ -13,6 +13,10 @@ export default function Navbar() {
       name: "Projects",
     },
     {
+      path: "#pricing",
+      name: "Pricing",
+    },
+    {
       path: "#contact",
       name: "Contact",
     },
