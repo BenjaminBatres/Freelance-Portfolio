@@ -35,7 +35,7 @@ export default function ProjectCard({ project }) {
         <Image
           src={project.image}
           alt="project"
-          className="rounded-2xl mb-8 border-2 border-[#08070e]"
+          className="rounded-2xl mb-8 border-2 border-[#08070e] "
         />
       </Link>
 
