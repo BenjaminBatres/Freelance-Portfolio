@@ -3,7 +3,7 @@ import React from "react";
 // images
 import SaveSpend from "../assets/Save-spend.png";
 import Ecommerce from "../assets/e-commerce-project.png";
-import SummaristProject from "../assets/Summarist-project.png";
+import LandscapingProject from "../assets/Landscaping-project.png";
 import ThePartyPlanner from "../assets/ThePartyPlanner-project.png";
 
 import ProjectCard from "./ui/ProjectCard";
@@ -11,6 +11,20 @@ import SectionHeader from "./ui/SectionHeader";
 
 export default function ProjectsSection() {
   const projects = [
+    {
+      title: "Landscaping Website - Template",
+      description:
+        "A modern, responsive website template designed for lawn care, landscaping, and gardening businesses. This project focuses on clean design, strong visual hierarchy, and conversion-driven sections like services, testimonials, and contact forms.",
+      image: LandscapingProject,
+      link: "https://landscaping-website-template-ten.vercel.app/",
+    },
+    {
+      title: "ThePartyPlanner - Template",
+      description:
+        "A Party planner template project. With About, services, and contacts pages",
+      image: ThePartyPlanner,
+      link: "https://the-party-planner-template.vercel.app/",
+    },
     {
       title: "Save Spend",
       description:
@@ -24,20 +38,6 @@ export default function ProjectsSection() {
         "An e-commerce UI for adding clothing products to your cart.",
       image: Ecommerce,
       link: "https://designer-product-e-commerce.vercel.app/",
-    },
-    {
-      title: "Summarist",
-      description:
-        "An online library with audioplayer",
-      image: SummaristProject,
-      link: "https://ben-internship-v2.vercel.app/",
-    },
-    {
-      title: "ThePartyPlanner - Template",
-      description:
-        "A Party planner template project. With About, services, and contacts pages",
-      image: ThePartyPlanner,
-      link: "https://the-party-planner-template.vercel.app/",
     },
   ];
 
