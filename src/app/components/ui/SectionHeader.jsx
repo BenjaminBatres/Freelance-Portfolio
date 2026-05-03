@@ -16,17 +16,10 @@ export default function SectionHeader({ title, subTitle }) {
   }, [isInView]);
   return (
     <motion.div
-      ref={containerRef}
-      animate={mainControls}
-      initial="hidden"
-      variants={{
-        hidden: { opacity: 0, y: 15 },
-        visible: {
-          opacity: 1,
-          y: 0,
-        },
-      }}
-      transition={{ delay: 0.5, duration: 0.5 }}
+      initial={{ opacity: 0, y: 15 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
+      transition={{ delay: 0.2, duration: 0.5 }}
     >
       <div className="flex justify-center mb-5">
         <h3 className="uppercase border-2 py-1 px-5 rounded-full flex items-center gap-2 font-medium bg-[#e3f2ff]">

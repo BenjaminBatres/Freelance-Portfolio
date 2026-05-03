@@ -8,7 +8,7 @@ export default function PricingCard({ info }) {
       initial={{ opacity: 0, y: 25 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
-      transition={{ delay: 0.7, duration: 0.7 }}
+      transition={{ delay: 0.4, duration: 0.7 }}
       className="border-2 rounded-[20px] py-12 md:py-15 px-10 flex flex-col items-center"
     >
       <div
