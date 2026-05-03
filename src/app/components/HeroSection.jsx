@@ -1,43 +1,22 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useRef } from "react";
 import { GoNorthStar } from "react-icons/go";
 import HeroImg from "../assets/Hero-img.jpg";
 //framer motion
 import * as motion from "motion/react-client";
-import { useAnimation, useInView } from "motion/react";
 
 export default function HeroSection() {
-  const containerRef = useRef(null);
-  const isInView = useInView(containerRef);
-  const mainControls = useAnimation();
-
-  useEffect(() => {
-    if (isInView) {
-      mainControls.start("visible");
-    }
-  }, [isInView]);
   return (
     <div className="pt-20 sm:pt-30 pb-20 lg:pb-55 px-6 bg-Primary border-b-2">
       <div className="max-w-7xl mx-auto flex flex-col gap-15 lg:flex-row items-center">
         <div className="lg:w-[60%] xl:pl-6">
           <motion.div
             className="flex flex-col items-center lg:items-start"
-            ref={containerRef}
-            animate={mainControls}
-            initial="hidden"
-            variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: {
-                opacity: 1,
-                y: 0,
-              },
-            }}
-            transition={{
-              duration: 0.5,
-              delay: 0.5,
-            }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ delay: 0.5, duration: 0.5 }}
           >
             <div className="relative md:mb-12">
               <div className="flex justify-center lg:justify-start">
@@ -92,23 +71,13 @@ export default function HeroSection() {
         </div>
         <div className="lg:w-[40%]">
           <motion.div
-            ref={containerRef}
-            initial="hidden"
-            animate={mainControls}
-            transition={{
-              duration: 0.5,
-              delay: 0.4,
-            }}
-            variants={{
-              hidden: { opacity: 0, y: 30 },
-              visible: {
-                opacity: 1,
-                y: 0,
-              },
-            }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ delay: 0.4, duration: 0.5 }}
           >
             <figure>
-              <Image src={HeroImg} className="rounded-lg" alt="hero-img" />
+              <Image src={HeroImg} loading="eager" className="rounded-lg" alt="hero-img" />
             </figure>
           </motion.div>
         </div>

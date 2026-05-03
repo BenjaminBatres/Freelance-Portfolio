@@ -1,8 +1,7 @@
 "use client";
 import Link from "next/link";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import * as motion from "motion/react-client";
-import { useAnimation, useInView } from "motion/react";
 export default function Footer() {
   const links = [
     {
@@ -19,28 +18,12 @@ export default function Footer() {
     },
   ];
 
-  const containerRef = useRef(null);
-  const isInView = useInView(containerRef);
-  const mainControls = useAnimation();
-
-  useEffect(() => {
-    if (isInView) {
-      mainControls.start("visible");
-    }
-  }, [isInView]);
   return (
     <footer className="pb-20 px-6">
       <motion.div
-        ref={containerRef}
-        animate={mainControls}
-        initial="hidden"
-        variants={{
-          hidden: { opacity: 0, y: 15 },
-          visible: {
-            opacity: 1,
-            y: 0,
-          },
-        }}
+        initial={{ opacity: 0, y: 15 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-100px" }}
         transition={{ delay: 0.5, duration: 0.5 }}
         className="max-w-5xl mx-auto"
       >
