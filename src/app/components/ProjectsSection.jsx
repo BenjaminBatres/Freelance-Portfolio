@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 // images
-import SaveSpend from "../assets/Save-spend.png";
+import RoyalBBQ from "../assets/Royal-BBQ-project.png";
 import Ecommerce from "../assets/e-commerce-project.png";
 import LandscapingProject from "../assets/Landscaping-project.png";
 import ThePartyPlanner from "../assets/ThePartyPlanner-project.png";
@@ -26,11 +26,11 @@ export default function ProjectsSection() {
       link: "https://the-party-planner-template.vercel.app/",
     },
     {
-      title: "Save Spend",
+      title: "Royal BBQ - Restaurant Template",
       description:
-        "A budgeting app that helps users track their expenses and manage their finances effectively.",
-      image: SaveSpend,
-      link: "https://save-spend.vercel.app/",
+        "A modern, high-performance frontend template designed for premium restaurants, steakhouses, and BBQ joints.",
+      image: RoyalBBQ,
+      link: "https://royal-bbq-template.vercel.app/",
     },
     {
       title: "Designer E-commerce",
