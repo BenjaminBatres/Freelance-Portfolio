@@ -13,6 +13,10 @@ export default function Footer() {
       name: "Projects",
     },
     {
+      path: "#pricing",
+      name: "Pricing",
+    },
+    {
       path: "#contact",
       name: "Contact",
     },
