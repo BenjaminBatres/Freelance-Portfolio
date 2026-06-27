@@ -2,7 +2,7 @@
 import React from "react";
 // images
 import RoyalBBQ from "../assets/Royal-BBQ-project.png";
-import Ecommerce from "../assets/e-commerce-project.png";
+import NeighborHoodPlumbing from "../assets/neighborhood-plumbing-co.png";
 import LandscapingProject from "../assets/Landscaping-project.png";
 import ThePartyPlanner from "../assets/ThePartyPlanner-project.png";
 
@@ -33,11 +33,11 @@ export default function ProjectsSection() {
       link: "https://royal-bbq-template.vercel.app/",
     },
     {
-      title: "Designer E-commerce",
+      title: "Neighborhood Plumbing Co.",
       description:
-        "An e-commerce UI for adding clothing products to your cart.",
-      image: Ecommerce,
-      link: "https://designer-product-e-commerce.vercel.app/",
+        "A modern, fully responsive business landing page for a local plumbing company. Built with React, Next.js, and Tailwind CSS, featuring smooth UI animations and a clean UX layout.",
+      image: NeighborHoodPlumbing,
+      link: "https://neighborhood-plumbing-co.vercel.app/",
     },
   ];
 
