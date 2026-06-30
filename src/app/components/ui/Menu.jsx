@@ -37,10 +37,10 @@ export default function Menu({ links }) {
         className={`fixed md:hidden left-0 transition-all top-30 duration-400 w-full h-screen bg-[#08070e]/55 ${isOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}
       ></div>
       <div
-        className={`fixed inset-0 top-30 transition-all duration-400 ${isOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+        className={`fixed md:hidden inset-0 top-30 transition-all duration-400 ${isOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}
       >
         <div
-          className={`bg-[#fbf8ff] w-[95%] sm:max-w-175 mx-auto md:w-full px-7.5 py-5 rounded-b-md`}
+          className={`bg-[#fbf8ff] w-[90%] sm:max-w-175 mx-auto md:w-full px-7.5 py-5 rounded-b-md`}
         >
           <ul className="space-y-5">
             {links.map((link, id) => (

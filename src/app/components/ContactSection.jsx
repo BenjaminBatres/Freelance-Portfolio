@@ -116,7 +116,7 @@ export default function ContactSection() {
     }
   }, [isInView]);
   return (
-    <section id="contact" className="pt-30 pb-20 px-6">
+    <section id="contact" className="pt-30 pb-20 px-7.5">
       <div className="max-w-5xl mx-auto">
         <motion.div
           ref={containerRef}

@@ -42,7 +42,7 @@ export default function ProjectsSection() {
   ];
 
   return (
-    <section id="projects" className="py-30 px-6 border-b-2">
+    <section id="projects" className="py-30 px-7.5 border-b-2">
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           title={"My projects"}

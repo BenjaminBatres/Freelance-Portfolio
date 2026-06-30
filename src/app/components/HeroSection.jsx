@@ -8,7 +8,7 @@ import * as motion from "motion/react-client";
 
 export default function HeroSection() {
   return (
-    <div className="pt-20 sm:pt-30 pb-20 lg:pb-55 px-6 bg-Primary border-b-2">
+    <div className="pt-20 sm:pt-30 pb-20 lg:pb-55 px-7.5 bg-Primary border-b-2">
       <div className="max-w-7xl mx-auto flex flex-col gap-15 lg:flex-row items-center">
         <div className="lg:w-[60%] xl:pl-6">
           <motion.div

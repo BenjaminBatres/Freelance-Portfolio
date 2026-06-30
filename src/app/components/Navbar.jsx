@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     <div className="h-30 relative">
       <nav className="h-30 fixed -translate-x-[50%] left-[50%] flex items-center justify-between w-full bg-Primary z-10 border-b-2">
-        <div className="max-w-7xl mx-auto w-full flex items-center justify-between px-6 ">
+        <div className="max-w-7xl mx-auto w-full flex items-center justify-between px-7.5">
           <div>
             <h1 className="text-2xl sm:text-4xl font-bold">Benjamin Batres</h1>
             <p className="font-thin tracking-[2px]">Web Developer</p>

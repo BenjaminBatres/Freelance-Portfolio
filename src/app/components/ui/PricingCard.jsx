@@ -20,7 +20,10 @@ export default function PricingCard({ info }) {
       <h2 className="text-3xl sm:text-[40px] font-medium text-center mb-4">
         {info.subTitle}
       </h2>
-      <p className="text-lg font-light mb-6">{info.description}</p>
+      <div className="text-lg mb-6 flex flex-col items-center">
+        <span className="font-light">{info.description}</span>
+        {info.delivery && <span>Delivery: {info.delivery} Days</span>}
+      </div>
       <div className="space-y-2">
         {info.perks.map((perk, id) => (
           <div className="flex gap-2" key={id}>

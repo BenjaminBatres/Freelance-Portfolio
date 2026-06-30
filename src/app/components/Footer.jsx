@@ -23,7 +23,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="pb-20 px-6">
+    <footer className="pb-20 px-7.5">
       <motion.div
         initial={{ opacity: 0, y: 15 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -38,7 +38,7 @@ export default function Footer() {
               Web Developer
             </span>
           </h2>
-          <ul className="flex gap-9">
+          <ul className="flex gap-6 sm:gap-9">
             {links.map((link, id) => (
               <li key={id}>
                 <Link
