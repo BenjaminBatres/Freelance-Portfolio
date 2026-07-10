@@ -4,7 +4,7 @@ import React from "react";
 import RoyalBBQ from "../assets/Royal-BBQ-project.png";
 import NeighborHoodPlumbing from "../assets/neighborhood-plumbing-co.png";
 import LandscapingProject from "../assets/Landscaping-project.png";
-import ThePartyPlanner from "../assets/ThePartyPlanner-project.png";
+import FirstChoiceAutoRepair from "../assets/first-choice-auto-repair.png";
 
 import ProjectCard from "./ui/ProjectCard";
 import SectionHeader from "./ui/SectionHeader";
@@ -19,11 +19,11 @@ export default function ProjectsSection() {
       link: "https://landscaping-website-template-ten.vercel.app/",
     },
     {
-      title: "ThePartyPlanner - Template",
+      title: "First Choice Auto Repair",
       description:
-        "A Party planner template project. With About, services, and contacts pages",
-      image: ThePartyPlanner,
-      link: "https://the-party-planner-template.vercel.app/",
+        "🚗 A modern, responsive landing page for a local auto & motorcycle repair workshop. Built with Next.js and Tailwind CSS to showcase clean UI components, service breakdowns, and optimized performance for client conversion. 🛠️",
+      image: FirstChoiceAutoRepair,
+      link: "https://first-choice-auto-repair-eta.vercel.app/",
     },
     {
       title: "Royal BBQ - Restaurant Template",

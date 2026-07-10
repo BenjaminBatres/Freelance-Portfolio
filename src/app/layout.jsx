@@ -1,6 +1,5 @@
 import localFont from "next/font/local";
 import "./globals.css";
-
 const archetica = localFont({
   src: [
     { path: "../app/fonts/Archetica-Thin.otf", weight: "100" },
@@ -15,6 +14,17 @@ const archetica = localFont({
 export const metadata = {
   title: "Benjamin's Portfolio",
   description: "Portfolio website showcasing freelance projects, client collaborations, and professional development work.",
+  keywords: [
+    "Frontend Developer",
+    "Next.js",
+    "JavaScript",
+    "Portfolio",
+    "Web Developer"
+  ],
+  openGraph: {
+    title: "Benjamin's Portfolio",
+    description: "Portfolio website showcasing freelance projects, client collaborations, and professional development work.",
+  }
 };
 
 export default function RootLayout({ children }) {
