@@ -50,7 +50,7 @@ export default function PricingSection() {
   {
     name: "One-Time Support",
     description:
-      "Need a few changes after your website is live? No problem.",
+      "Need a few changes after your website is live. No problem.",
     price: "$75",
     period: "per support package",
     features: [
